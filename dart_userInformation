@@ -1,0 +1,23 @@
+void main(){
+  
+  User_Information user_data = 
+    User_Information(0.07,"Flutter Developer","Mirpur","Super-Man","Rooman ");
+  user_data.user_();
+  user_data.user_details();
+}
+class User_Information {
+  dynamic ?pin;
+  String ?jobPost,address,user_name,user_id;
+  User_Information(this.pin,this.jobPost,this.address,this.user_id,this.user_name){}
+ void user_(){ 
+   print('Hello $user_name Sir');
+   print('This is Your User Pin => $pin Number');   
+ }  
+  void user_details (){   
+    print('');
+    print('YOUR DETAILS HERE');
+    print('Your User ID Number : $user_id');
+    print('Your Job Title : $jobPost');
+    print('Your Address : $address');    
+  }
+}
